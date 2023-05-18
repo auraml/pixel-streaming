@@ -1,40 +1,40 @@
 {
-  "name": "pixel-streaming-auraml",
-  "names": [
-    "AuraML Pixel Streaming"
-  ],
-  "version": "4.2.50",
-  "author": "Creatoon",
-  "license": "MIT",
-  "description": "The Pixel Streaming library for ReactJS facilitates the integration of Unreal Engine v.5 into a web browser. It enables the transmission of commands and receipt of callbacks from the stream server once Unreal Engine is launched.",
-  "public": true,
-  "main": "dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/auraml/pixel-streaming.git"
-  },
-  "engines": {
-    "node": ">=v16"
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": false,
-    "singleQuote": false,
-    "trailingComma": "es5"
-  },
-  "peerDependencies": {
-    "react": "^18.1.0",
-    "rsuite": "^5.28.1"
-  },
-  "dependencies": {
-    "metaeditor4-ue": "^0.3.0",
-    "metaeditor4-ui": "^0.2.0",
-    "moment": "^2.29.4",
-    "react-json-tree": "^0.18.0",
-    "react-jss": "^10.10.0",
-    "react-portal": "^4.2.2",
-    "semver": "^7.3.8",
-    "short-uuid": "^4.2.2",
-    "use-resize-observer": "latest"
-  }
+ "name": "pixel-streaming-auraml",
+ "names": [
+  "AuraML Pixel Streaming"
+ ],
+ "version": "4.2.50",
+ "author": "Creatoon",
+ "license": "MIT",
+ "description": "The Pixel Streaming library for ReactJS facilitates the integration of Unreal Engine v.5 into a web browser. It enables the transmission of commands and receipt of callbacks from the stream server once Unreal Engine is launched.",
+ "public": true,
+ "main": "dist/index.js",
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/auraml/pixel-streaming.git"
+ },
+ "engines": {
+  "node": ">=v16"
+ },
+ "prettier": {
+  "printWidth": 80,
+  "semi": false,
+  "singleQuote": false,
+  "trailingComma": "es5"
+ },
+ "peerDependencies": {
+  "react": "^18.1.0",
+  "rsuite": "^5.28.1"
+ },
+ "dependencies": {
+  "metaeditor4-ue": "^0.3.0",
+  "metaeditor4-ui": "^0.2.0",
+  "moment": "^2.29.4",
+  "react-json-tree": "^0.18.0",
+  "react-jss": "^10.10.0",
+  "react-portal": "^4.2.2",
+  "semver": "^7.3.8",
+  "short-uuid": "^4.2.2",
+  "use-resize-observer": "latest"
+ }
 }
