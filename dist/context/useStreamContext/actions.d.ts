@@ -1,0 +1,43 @@
+import { StateProps } from './initial';
+import { WebrtcStatus, StreamStatus, CommandItem, ResponsItem } from './types';
+import { PlayerConfigProps } from '../../snippets/Player/types';
+import type { IApplication } from '../../globalTypes';
+declare const actions: () => {
+    readonly state: StateProps;
+    readonly commandsList: CommandItem[];
+    readonly responsesList: ResponsItem[];
+    dispatch(payload: unknown): void;
+    dispatchPsConfig(payload: unknown): void;
+    readonly streamApp: any;
+    setRefStream(app: IApplication): void;
+    readonly isStreamActive: boolean;
+    readonly isWebrtcConnected: boolean;
+    readonly isWebrtcError: boolean;
+    readonly isStreamError: boolean;
+    setWebrtcStatus(status: WebrtcStatus, message?: string | boolean): void;
+    setStreamStatus(status: WebrtcStatus, message?: string | boolean): void;
+    setFreezeFrame(freezeFrame: boolean): void;
+    addCommand(payload: CommandItem): void;
+    addResponse(payload: ResponsItem): void;
+    updateConfig(playerConfig: PlayerConfigProps): void;
+    setMuted(muted: boolean): void;
+};
+export interface ActionProps {
+    state: StateProps;
+    commandsList: CommandItem[];
+    responsesList: ResponsItem[];
+    streamApp: IApplication | null;
+    setRefStream: (app: IApplication) => void;
+    isStreamActive: boolean;
+    isWebrtcConnected: boolean;
+    isWebrtcError: boolean;
+    isStreamError: boolean;
+    setWebrtcStatus: (status: WebrtcStatus, message?: string | boolean) => void;
+    setStreamStatus: (status: StreamStatus, message?: string | boolean) => void;
+    setFreezeFrame: (freezeFrame: boolean) => void;
+    addCommand: (payload: CommandItem) => void;
+    addResponse: (payload: ResponsItem) => void;
+    updateConfig: (config: PlayerConfigProps) => void;
+    setMuted: (muted: boolean) => void;
+}
+export default actions;
