@@ -26,7 +26,7 @@ import moment from "moment"
 import uuid from "short-uuid"
 import { JSONTree } from "react-json-tree"
 import { createUseStyles } from "react-jss"
-import { Logger, Config, PixelStreaming } from "metaeditor4-ue"
+import { Logger, Config, PixelStreaming } from "metaeditor4-ue-auraml"
 import { PixelStreamingApplicationStyle, Application } from "metaeditor4-ui"
 import SpinnerIcon from "@rsuite/icons/legacy/Spinner"
 import PlayOutlineIcon from "@rsuite/icons/PlayOutline"
@@ -705,7 +705,7 @@ var peerDependencies = {
   rsuite: "^5.28.1",
 }
 var dependencies = {
-  "metaeditor4-ue": "^0.3.0",
+  "metaeditor4-ue-auraml": "^1.0.2",
   "metaeditor4-ui": "^0.2.0",
   moment: "^2.29.4",
   "react-json-tree": "^0.18.0",

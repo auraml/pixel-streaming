@@ -14,7 +14,7 @@ var moment = _interopDefault(require("moment"))
 var uuid = _interopDefault(require("short-uuid"))
 var reactJsonTree = require("react-json-tree")
 var reactJss = require("react-jss")
-var metaeditor4Ue = require("metaeditor4-ue")
+var metaeditor4UeAuraML = require("metaeditor4-ue-auraml")
 var metaeditor4Ui = require("metaeditor4-ui")
 var SpinnerIcon = _interopDefault(require("@rsuite/icons/legacy/Spinner"))
 var PlayOutlineIcon = _interopDefault(require("@rsuite/icons/PlayOutline"))
@@ -693,7 +693,7 @@ var peerDependencies = {
   rsuite: "^5.28.1",
 }
 var dependencies = {
-  "metaeditor4-ue": "^0.3.0",
+  "metaeditor4-ue-auraml": "^1.0.2",
   "metaeditor4-ui": "^0.2.0",
   moment: "^2.29.4",
   "react-json-tree": "^0.18.0",
@@ -2555,7 +2555,7 @@ var PlayerComponent = /*#__PURE__*/ React.forwardRef(function (_ref, ref) {
   // React.useEffect(() => streamContext.updateConfig(cfg), [cfg])
   React.useEffect(function () {
     // Example of how to set the logger level
-    metaeditor4Ue.Logger.SetLoggerVerbosity(0)
+    metaeditor4UeAuraML.Logger.SetLoggerVerbosity(0)
     // Check if already initialized
     if (isReady) return
     setIsReady(true)
@@ -2578,12 +2578,12 @@ var PlayerComponent = /*#__PURE__*/ React.forwardRef(function (_ref, ref) {
       MatchViewportRes: true,
     }
     // Create a config object
-    var config = new metaeditor4Ue.Config({
+    var config = new metaeditor4UeAuraML.Config({
       useUrlParams: true,
       initialSettings: initialSettings,
     })
     // Create a Native DOM delegate instance that implements the Delegate interface class
-    var stream = new metaeditor4Ue.PixelStreaming(config)
+    var stream = new metaeditor4UeAuraML.PixelStreaming(config)
     var application = new metaeditor4Ui.Application({
       stream: stream,
     })
