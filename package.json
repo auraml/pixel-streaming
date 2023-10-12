@@ -3,7 +3,7 @@
   "names": [
     "AuraML Pixel Streaming"
   ],
-  "version": "4.2.57",
+  "version": "4.2.58",
   "author": "Creatoon",
   "license": "MIT",
   "description": "The Pixel Streaming library for ReactJS facilitates the integration of Unreal Engine v.5 into a web browser. It enables the transmission of commands and receipt of callbacks from the stream server once Unreal Engine is launched.",
